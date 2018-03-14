@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #364d62;
+    text-decoration: none;
+}
+ 
+a:visited {
+    color: #364d62;
+}
+
+/*LANDING PAGE*/
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #dce2e3;
+    color: #364d62;
+    
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    margin-top: -1em;
+}
+
+hr {
+    border: 0;
+    border-bottom: 2px solid #ff636f;
+    padding: 0 300px;
+}
+
+i {
+    color: #364d62;
+}
+
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    .title {
+        font-size: 35px;
+    }
+    
+    hr {
+        padding: 0 250px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    .title {
+        font-size: 25px;
+    }
+    
+    hr {
+        padding: 0 150px;
+    }
+}
+
+/*MENU BUTTONS*/
+#menu-open {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#menu-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+/*MENU*/
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #ff636f;
+    color: #364d62;
+    
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    animation-fill-mode: forwards;
+}
+
+.menu-el-style {
+    font-size: 30px;
+}
+
+.menu-el-style:hover {
+    color: #dce2e3;
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+}
+
+/*ABOUT*/
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #2574A9;
+    
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.about #menu-open {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+span {
+    text-align: center;
+    font-weight: ;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.about-me {
+    margin-top: 15px;
+    padding: 0 40px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-content {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    
+    .about h1 {
+        margin-top: 80px;
+    }
+    
+    .list-1 {
+        margin-top: 30px;
+    }
+    
+    .list-2 {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .about-me {
+        padding: 0 50px;
+    }
+    
+    .about {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-me {
+        padding: 0 100px;
+    }
+    
+    .about {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    .about-me {
+        padding: 0 40px;
+    }
+    
+    .about {
+        padding: 0 300px;
+    }
+}
+
+/*PROJECTS*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F4D03F;
+    color: #364d62;
+    padding: 30px;
+    
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.project-list div {
+    flex-basis: 30%;
+    padding: 10px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .project-list div {
+        flex-basis: 100%;
+    }
+    
+    .projects h1 {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+/*CONTACT*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    background-color: #91b496;
+    color: #fff;
+    
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.contact #menu-open {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
