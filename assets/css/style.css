@@ -68,15 +68,15 @@ i {
 
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
     
     .title {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     hr {
-        padding: 0 80px;
+        padding: 0 100px;
     }
 }
 
