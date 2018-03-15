@@ -128,22 +128,14 @@ i {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    color: #fff;
-    background-color: #2574A9;
+    color: #364d62;
+    background-color: #dce2e3;
     
     animation: fadeIn;
     animation-duration: 0.5s;
     animation-delay: 0s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-}
-
-.about #menu-open {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    cursor: pointer;
-    color: #fff;
 }
 
 .about-content {
@@ -233,7 +225,7 @@ img {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    background-color: #F4D03F;
+    background-color: #dce2e3;
     color: #364d62;
     padding: 30px;
     
@@ -281,22 +273,14 @@ figcaption {
     min-height: 100vh;
     justify-content: center;
     text-align: center;
-    background-color: #91b496;
-    color: #fff;
+    background-color: #dce2e3;
+    color: #364d62;
     
     animation: fadeIn;
     animation-duration: 0.5s;
     animation-delay: 0s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-}
-
-.contact #menu-open {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    cursor: pointer;
-    color: #fff;
 }
 
 @keyframes fadeIn {
