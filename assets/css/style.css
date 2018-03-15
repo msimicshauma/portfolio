@@ -227,7 +227,7 @@ img {
     min-height: 100vh;
     background-color: #dce2e3;
     color: #364d62;
-    padding: 30px;
+    padding: 50px 30px 30px 30px;
     
     animation: fadeIn;
     animation-duration: 0.5s;
