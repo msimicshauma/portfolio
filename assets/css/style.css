@@ -86,6 +86,9 @@ i {
     top: 30px;
     right: 30px;
     cursor: pointer;
+    /*ADDED*/
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #menu-close {
