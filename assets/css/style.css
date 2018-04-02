@@ -92,6 +92,34 @@ i {
     right: 30px;
     cursor: pointer;
     font-size: 35px;
+    
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0px);
+    }
+    
+    25% {
+        transform: translateX(-10px);
+    }
+    
+    50% {
+        transform: translateX(0px);
+    }
+    
+    75% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 #menu-close {
@@ -188,6 +216,7 @@ i {
     
     #menu-open {
         font-size: 30px;
+        animation: none;
     }
     
     #menu-close {
